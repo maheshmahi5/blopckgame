@@ -1,0 +1,146 @@
+<h2 style="text-align: center"> Blocks Game</h2>
+<div *ngIf = "!hide">
+<button class ="start" (click)="startGame()">start</button>
+</div>
+<div *ngIf = "!gameOver">
+<div *ngIf = "start"> 
+<div *ngFor = "let i of item">
+<div *ngIf= "block1">
+<button class ="block1" (click)="lock1()" [disabled] ='buttonsdisable'></button>
+</div>
+<div *ngIf= "block2">
+<button class ="block2" (click)="lock2()"  [disabled] ='buttonsdisable'></button>
+</div>
+<div *ngIf= "block3">
+<button class ="block3" (click)="lock3()"  [disabled] ='buttonsdisable'></button>
+</div>
+<div *ngIf= "block4">
+<button class ="block4" (click)="lock4()" [disabled] ='buttonsdisable'></button>
+</div>
+<div *ngIf= "block5">
+<button class ="block5" (click)="lock5()" [disabled] ='buttonsdisable'></button>
+</div>
+<div *ngIf= "block6">
+<button class ="block6" (click)="lock6()" [disabled] ='buttonsdisable'></button>
+</div>
+<div *ngIf= "block7">
+<button class ="block7" (click)="lock7()" [disabled] ='buttonsdisable'></button>
+</div>
+<div *ngIf= "block8">
+<button class ="block8" (click)="lock8()"[disabled] ='buttonsdisable'></button>
+</div>
+<div *ngIf= "block9">
+<button class ="block9" (click)="lock9()" [disabled] ='buttonsdisable'></button>
+</div>
+<div *ngIf= "block10">
+<button class ="block10" (click)="lock10()" [disabled] ='buttonsdisable'></button>
+</div>
+<div *ngIf= "block11">
+<button class ="block11" (click)="lock11()" [disabled] ='buttonsdisable'></button>
+</div>
+<div *ngIf= "block12">
+<button class ="block12" (click)="lock12()" [disabled] ='buttonsdisable'></button>
+</div>
+<div *ngIf= "block13">
+<button class ="block13" (click)="lock13()" [disabled] ='buttonsdisable'></button>
+</div>
+<div *ngIf= "block14">
+<button class ="block14" (click)="lock14()" [disabled] ='buttonsdisable'></button>
+</div>
+<div *ngIf= "block15">
+<button class ="block15" (click)="lock15()" [disabled] ='buttonsdisable'></button>
+</div>
+<div *ngIf= "block16">
+<button class ="block16" (click)="lock16()" [disabled] ='buttonsdisable'></button>
+</div>
+<div *ngIf= "block17">
+<button class ="block17" (click)="lock17()" [disabled] ='buttonsdisable'></button>
+</div>
+<div *ngIf= "block18">
+<button class ="block18" (click)="lock18()" [disabled] ='buttonsdisable'></button>
+</div>
+<div *ngIf= "block19">
+<button class ="block19" (click)="lock19()" [disabled] ='buttonsdisable'></button>
+</div>
+<div *ngIf= "block20">
+<button class ="block20" (click)="lock20()" [disabled] ='buttonsdisable'></button>
+</div>
+</div>
+<div *ngIf= "!block1">
+<button class ="block1"  [disabled] ='gblock1'>{{item[0]}}</button>
+</div>
+<div *ngIf= "!block2">
+<button class ="block2"  [disabled] ='gblock2'>{{item[1]}}</button>
+</div>
+<div *ngIf= "!block3">
+<button class ="block3"   [disabled] ='gblock3'>{{item[2]}}</button>
+</div>
+<div *ngIf= "!block4">
+<button class ="block4"  [disabled] ='gblock4'>{{item[3]}}</button>
+</div>
+<div *ngIf= "!block5">
+<button class ="block5" [disabled] ='gblock5'>{{item[4]}}</button>
+</div>
+<div *ngIf= "!block6">
+<button class ="block6"   [disabled] ='gblock6'>{{item[5]}}</button>
+</div>
+<div *ngIf= "!block7">
+<button class ="block7"   [disabled] ='gblock7'>{{item[6]}}</button>
+</div>
+<div *ngIf= "!block8">
+<button class ="block8"   [disabled] ='gblock8'>{{item[7]}}</button>
+</div>
+<div *ngIf= "!block9">
+<button class ="block9"   [disabled] ='gblock9'>{{item[8]}}</button>
+</div>
+<div *ngIf= "!block10">
+<button class ="block10"   [disabled] ='gblock10'>{{item[9]}}</button>
+</div>
+<div *ngIf= "!block11">
+<button class ="block11"   [disabled] ='gblock11'>{{item[10]}}</button>
+</div>
+<div *ngIf= "!block12">
+<button class ="block12"  [disabled] ='gblock12'>{{item[11]}}</button>
+</div>
+<div *ngIf= "!block13">
+<button class ="block13"   [disabled] ='gblock13'>{{item[12]}}</button>
+</div> 
+<div *ngIf= "!block14">
+<button class ="block14"   [disabled] ='gblock14'>{{item[13]}}</button>
+</div>
+<div *ngIf= "!block15">
+<button class ="block15"   [disabled] ='gblock15'>{{item[14]}}</button>
+</div>
+<div *ngIf= "!block16">
+<button class ="block16"   [disabled] ='gblock16'>{{item[15]}}</button>
+</div>
+<div *ngIf= "!block17">
+<button class ="block17"   [disabled] ='gblock17'>{{item[16]}}</button>
+</div>
+<div *ngIf= "!block18">
+<button class ="block18"   [disabled] ='gblock18'>{{item[17]}}</button>
+</div>
+<div *ngIf= "!block19">
+<button class ="block19"   [disabled] ='gblock19'>{{item[18]}}</button>
+</div>
+<div *ngIf= "!block20">
+<button class ="block20"   [disabled] ='gblock20'>{{item[19]}}</button>
+</div>
+</div>
+</div>
+<div *ngIf = 'start'>
+    <h2 class="score">Score : </h2>
+    <h3 class = 'total'>{{score}}</h3>
+    <h2 class ="timeLeft">Time Left :</h2> 
+    <h3 class = "timeseconds">{{timeLeft}} S</h3>
+    <div *ngIf = "pause">
+    <button class ="pause" (click)="pauseTimer()">Pause</button>
+    </div>
+  
+</div>
+<div *ngIf = "!pause">
+    <button class ="Restart" (click)="restartTimer()">Restart</button>
+    </div>
+<div *ngIf = "gameOver">
+    <h1>Game Over</h1>
+</div>
